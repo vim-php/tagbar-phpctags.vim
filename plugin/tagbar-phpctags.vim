@@ -4,7 +4,6 @@ endif
 
 let g:tagbar_type_php = {
     \ 'ctagsbin'  : tagbar_phpctags_bin,
-    \ 'ctagsargs' : '',
     \ 'kinds'     : [
         \ 'd:Constants:0',
         \ 'v:Variables:0',
