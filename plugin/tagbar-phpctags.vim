@@ -21,9 +21,9 @@ let g:tagbar_type_php = {
         \ 'i' : 'interface'
     \ },
     \ 'scope2kind' : {
-        \ 'class'    : 'c',
-        \ 'method'   : 'm',
-        \ 'function' : 'f',
-        \ 'interface': 'i'
+        \ 'class'     : 'c',
+        \ 'method'    : 'm',
+        \ 'function'  : 'f',
+        \ 'interface' : 'i'
     \ }
 \ }
