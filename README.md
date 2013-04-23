@@ -15,3 +15,8 @@ Location of phpctags should be in system '$PATH' environment variable.
 Or, the locateion of phpctags can be configured in vimrc as such:
 
     let g:tagbar_phpctags_bin='PATH_TO_phpctags'
+
+Acknowledgements
+================
+
+* [Chronial](https://github.com/Chronial) for improve the tags folding.
