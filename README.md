@@ -25,4 +25,5 @@ The default is 128 megabytes of memory.
 Acknowledgements
 ================
 
+* [DeMarko](https://github.com/DeMarko) for memory limit support.
 * [Chronial](https://github.com/Chronial) for improve the tags folding.
