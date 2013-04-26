@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tagbar-phpctags by techlivezheng</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Tagbar-phpctags</h1>
+        <p>Using phpctags to generate php ctags index for vim plugin tagbar.</p>
+
+        <p class="view"><a href="https://github.com/techlivezheng/tagbar-phpctags">View the Project on GitHub <small>techlivezheng/tagbar-phpctags</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/techlivezheng/tagbar-phpctags/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/techlivezheng/tagbar-phpctags/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/techlivezheng/tagbar-phpctags">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>tagbar-phpctags</h1>
+
+<p>An addon plugin for <a href="http://majutsushi.github.com/tagbar/">tagbar</a> using
+<a href="https://github.com/techlivezheng/phpctags">phpctags</a> to generate php ctags index.</p>
+
+<p>Provide a much better PHP syntax outline support than the orginal ctags. Methods
+and properties even local variables assigned in functions are list in their own scope.</p>
+
+<h2>Configuration</h2>
+
+<p>Location of phpctags should be in system '$PATH' environment variable.</p>
+
+<p>Or, the location of phpctags can be configured in vimrc as such:</p>
+
+<pre><code>let g:tagbar_phpctags_bin='PATH_TO_phpctags'
+</code></pre>
+
+<p>The amount of memory that phpctags can use can be configured as such:</p>
+
+<pre><code>let g:tagbar_phpctags_memory_limit = '512M'
+</code></pre>
+
+<p>The default is 128 megabytes of memory.</p>
+
+<h2>Acknowledgements</h2>
+
+<ul>
+<li>
+<a href="https://github.com/DeMarko">DeMarko</a> for memory limit support.</li>
+<li>
+<a href="https://github.com/Chronial">Chronial</a> for improve the tags folding.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/techlivezheng">techlivezheng</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
