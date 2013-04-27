@@ -12,6 +12,18 @@ Configuration
 
 Location of phpctags should be in system '$PATH' environment variable.
 
-Or, the locateion of phpctags can be configured in vimrc as such:
+Or, the location of phpctags can be configured in vimrc as such:
 
     let g:tagbar_phpctags_bin='PATH_TO_phpctags'
+
+The amount of memory that phpctags can use can be configured as such:
+
+    let g:tagbar_phpctags_memory_limit = '512M'
+
+The default is 128 megabytes of memory.
+
+Acknowledgements
+================
+
+* [DeMarko](https://github.com/DeMarko) for memory limit support.
+* [Chronial](https://github.com/Chronial) for improve the tags folding.
