@@ -8,7 +8,7 @@ Provide a much better PHP syntax outline support than the orginal ctags. Methods
 and properties even local variables assigned in functions are list in their own scope.
 
 Configuration
-=============
+-------------
 
 Location of phpctags should be in system '$PATH' environment variable.
 
@@ -23,7 +23,7 @@ The amount of memory that phpctags can use can be configured as such:
 The default is 128 megabytes of memory.
 
 Acknowledgements
-================
+----------------
 
 * [DeMarko](https://github.com/DeMarko) for memory limit support.
 * [Chronial](https://github.com/Chronial) for improve the tags folding.
