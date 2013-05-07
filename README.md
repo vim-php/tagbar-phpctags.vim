@@ -7,8 +7,18 @@ An addon plugin for [tagbar](http://majutsushi.github.com/tagbar/) using
 Provide a much better PHP syntax outline support than the orginal ctags. Methods
 and properties even local variables assigned in functions are list in their own scope.
 
+Installation
+------------
+
+If you are using the distributed archive from vim.org, a phpctags executable
+has been included, nothing to do.
+
+If you are using the plain source from the repository, then phpctags needs to
+be built first. On \*nix platforms, just run `make` will do. For other
+platforms, especially Windows, please help yourself out.
+
 Configuration
-=============
+-------------
 
 Location of phpctags should be in system '$PATH' environment variable.
 
@@ -23,7 +33,7 @@ The amount of memory that phpctags can use can be configured as such:
 The default is 128 megabytes of memory.
 
 Acknowledgements
-================
+----------------
 
 * [DeMarko](https://github.com/DeMarko) for memory limit support.
 * [Chronial](https://github.com/Chronial) for improve the tags folding.

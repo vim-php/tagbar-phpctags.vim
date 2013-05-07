@@ -1,5 +1,13 @@
 if !exists('g:tagbar_phpctags_bin')
-    let g:tagbar_phpctags_bin = 'phpctags'
+    if executable(expand("<sfile>:p:h").'/../phpctags/phpctags')
+        let g:tagbar_phpctags_bin = expand("<sfile>:p:h").'/../phpctags/phpctags'
+    elseif executable(expand("<sfile>:p:h").'/../bin/phpctags')
+        let g:tagbar_phpctags_bin = expand("<sfile>:p:h").'/../bin/phpctags'
+    elseif executable(expand("<sfile>:p:h").'/../phpctags')
+        let g:tagbar_phpctags_bin = expand("<sfile>:p:h").'/../phpctags'
+    else
+        let g:tagbar_phpctags_bin = 'phpctags'
+    endif
 endif
 
 if !exists('g:tagbar_phpctags_memory_limit')
