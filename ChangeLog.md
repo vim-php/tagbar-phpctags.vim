@@ -1,3 +1,10 @@
+Version 0.4
+-----------
+
+* work with phpctags v0.4
+* use Makefile to ease the building process
+* distributed archive now contains a phpctags executable
+
 Version 0.3
 -----------
 
