@@ -1,3 +1,8 @@
+Version 0.5.1
+-------------
+
+* work with phpctags v0.5.1
+
 Version 0.5
 -----------
 
