@@ -3,7 +3,7 @@ source := README.md \
           bin/phpctags \
           plugin/tagbar-phpctags.vim
 
-version := 0.5.1
+version := 0.6.0
 
 .PHONY: all
 all: bin/phpctags
@@ -29,15 +29,15 @@ archive: build/tagbar-phpctags-$(version).zip
 bin:
 	@mkdir bin/
 
-bin/phpctags: build/phpctags-$(version)/phpctags | bin
-	@cp build/phpctags-$(version)/phpctags $@
+bin/phpctags: build/phpctags-$(version)/build/phpctags.phar | bin
+	@cp build/phpctags-$(version)/build/phpctags.phar $@
 
 build:
 	@mkdir build/
 
 build/phpctags-$(version).zip: | build
 	@echo "Downloading phpctags ..."
-	@curl -o $@ -s -L https://github.com/techlivezheng/phpctags/archive/v$(version).zip
+	@curl -o $@ -s -L https://github.com/vim-php/phpctags/archive/$(version).zip
 	@echo "Done!"
 
 build/phpctags-$(version): build/phpctags-$(version).zip | build
@@ -45,7 +45,7 @@ build/phpctags-$(version): build/phpctags-$(version).zip | build
 	@cd build/ && unzip phpctags-$(version).zip
 	@echo "Done!"
 
-build/phpctags-$(version)/phpctags: | build/phpctags-$(version)
+build/phpctags-$(version)/build/phpctags.phar: | build/phpctags-$(version)
 	@echo "Building phpctags ..."
 	@cd build/phpctags-$(version) && $(MAKE)
 	@echo "Done!"
