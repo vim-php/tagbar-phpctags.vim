@@ -3,7 +3,7 @@ source := README.md \
           bin/phpctags \
           plugin/tagbar-phpctags.vim
 
-version := 0.5.1
+version := 0.5.3
 
 .PHONY: all
 all: bin/phpctags
