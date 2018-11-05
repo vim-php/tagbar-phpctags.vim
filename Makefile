@@ -37,7 +37,7 @@ build:
 
 build/phpctags-$(version).zip: | build
 	@echo "Downloading phpctags ..."
-	@curl -o $@ -s -L https://github.com/techlivezheng/phpctags/archive/v$(version).zip
+	@curl -o $@ -s -L https://github.com/InFog/phpctags/archive/v$(version).zip
 	@echo "Done!"
 
 build/phpctags-$(version): build/phpctags-$(version).zip | build
