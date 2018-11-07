@@ -30,7 +30,7 @@ bin:
 	@mkdir bin/
 
 bin/phpctags: build/phpctags-$(version)/phpctags | bin
-	@cp build/phpctags-$(version)/phpctags $@
+	@ln -s ../build/phpctags-$(version)/bin/phpctags $@
 
 build:
 	@mkdir build/
