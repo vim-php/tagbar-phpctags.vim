@@ -3,7 +3,7 @@ source := README.md \
           bin/phpctags \
           plugin/tagbar-phpctags.vim
 
-version := 0.5.3
+version := 0.9.0
 
 .PHONY: all
 all: bin/phpctags
@@ -37,7 +37,7 @@ build:
 
 build/phpctags-$(version).zip: | build
 	@echo "Downloading phpctags ..."
-	@curl -o $@ -s -L https://github.com/InFog/phpctags/archive/v$(version).zip
+	@curl -o $@ -s -L https://github.com/vim-php/phpctags/archive/$(version).zip
 	@echo "Done!"
 
 build/phpctags-$(version): build/phpctags-$(version).zip | build
