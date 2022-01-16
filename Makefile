@@ -3,7 +3,7 @@ source := README.md \
           bin/phpctags \
           plugin/tagbar-phpctags.vim
 
-version := master
+version := 0.10.0
 
 .PHONY: all
 all: bin/phpctags
@@ -11,9 +11,10 @@ all: bin/phpctags
 .PHONY: clean
 clean:
 	@echo "Cleaning old build files ..."
-	@rm -f bin/phpctags
+	@rm -f bin/*
 	@rm -f build/tagbar-phpctags-$(version).zip
 	@cd build/phpctags-$(version) && $(MAKE) clean
+	@rm -rf build/*
 	@echo "Done!"
 
 .PHONY: dist-clean
