@@ -1,3 +1,8 @@
+Version 0.10.0
+--------------
+
+* Updated to use phpctags 0.10.0
+
 Version 0.5.1
 -------------
 
